@@ -1,0 +1,6 @@
+Surface of interaction of A with B: 872.0Å²
+Surface of interaction of A with C: 239.5Å²
+Surface of interaction of A with D: 684.0Å²
+Surface of interaction of B with D: 23.0Å²
+Surface of interaction of B with C: 664.5Å²
+Surface of interaction of C with D: 817.5Å²
