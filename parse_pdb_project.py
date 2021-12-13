@@ -124,6 +124,7 @@ def parse_dssp(filename):
 		# Select the correct chain
 		if c==0: continue
 		# Read all the variables resn, aa, acc, phi, psi
+		chain = line[11]
 		aa=line[13]
 		if aa.islower():
 			aa='C'
@@ -135,20 +136,18 @@ def parse_dssp(filename):
 		acc=float(line[34:38])
 		phi=float(line[103:109])
 		psi=float(line[109:115])
-		aa_dssp=[resn,aa,ss,acc,phi,psi]
+		aa_dssp=[resn,chain,aa,ss,acc,phi,psi]
 		dssp_list.append(aa_dssp)
 	return dssp_list
 		
-
 # Get sequence and secondary structure
 def get_ss(dssp_list):		
 	seq=''
 	ss=''
 	for aa in dssp_list:
-		ss=ss+aa[2]
-		seq=seq+aa[1]
-	return seq,ss
-	
+		ss=ss+aa[3]
+		seq=seq+aa[2]
+	return seq,ss	
 
 # Count residues with a given secondary structure
 def count_ss(ss,ss_type):
@@ -162,7 +161,7 @@ def count_ss(ss,ss_type):
 def get_ss_angle(dssp_list,ss_type):
 	angles=[]
 	for aa in dssp_list:
-		if aa[2]==ss_type: angles.append((aa[-2],aa[-1]))
+		if aa[3]==ss_type: angles.append((aa[-2],aa[-1]))
 	return angles
 
 
@@ -170,20 +169,43 @@ def get_ss_angle(dssp_list,ss_type):
 def get_aa_acc(dssp_list,aa_type):
 	accs=[]
 	for aa in dssp_list:
-		if aa[1]==aa_type: accs.append(aa[3])
+		if aa[2]==aa_type: accs.append(aa[4])
 	return accs
 
 
-def get_chain_acc(dssp_list):
+def get_chain_acc(dssp_list, chain):
 	accs=[]
 	for aa in dssp_list:
-		accs.append(aa[3])
+		if aa[1]==chain:
+			accs.append(aa[4])
 	return accs
 
-
+#return the interacting residues in the monomer	
+def inter_resid(mon,tetramer,chain,th=3.0):
+	hydrophobic=['G','A','V','L','I','P','F','M','W']
+	i=-1
+	inter=[]
+	textfile2 = open('Monomers_iteracting_residues.txt','a')
+	textfile2.write('Interacting residues of monomer '+chain+' with a difference in accessibility of '+str(th)+':\n')
+	for res in tetramer:
+		if res[1]==chain:
+			i+=1
+			diff=mon[i][4]-res[4]
+			if diff>th:
+				x=[res[0],res[1],res[2],res[3],res[4],mon[i][4],diff]
+				if res[2] in hydrophobic:
+					x.extend(['hydrophobic'])
+				inter.append(x) 
+				textfile2.write(str(x)+'\n')
+	textfile2.write('\n\n')
+	textfile2.close()
+	return inter
 
 if __name__ == '__main__':
 	import pandas as pd
+	import numpy as np
+	import statistics
+	
 	'''filename=sys.argv[1]
 	pdb_coords=parse_pdb(filename)
 	
@@ -192,7 +214,7 @@ if __name__ == '__main__':
 	
 	#to obtain all interacting atoms between chains
 	final_dists=get_inter(pdb_coords[0])'''
-	
+	#./parse_pdb_project.py ../data/1gzxABCD.dssp ../data/1gzxABC.dssp ../data/1gzxABD.dssp  ../data/1gzxACD.dssp ../data/1gzxBCD.dssp ../data/1gzxA.dssp ../data/1gzxB.dssp ../data/1gzxC.dssp  ../data/1gzxD.dssp
 	#print ('Dist for chain ', chain, ':',np.mean(ca_dists),np.std(ca_dists))
 	Norm_Acc= {"A" :106.0,  "B" :160.0,         # D or N
    "C" :135.0,  "D" :163.0,  "E" :194.0,
@@ -205,33 +227,72 @@ if __name__ == '__main__':
    "Y" :222.0,  "Z" :196.0}         # E or Q
   
 	ABCD=sys.argv[1]
-	ABC= sys.argv[2]
-	ABD= sys.argv[3]
-	ACD= sys.argv[4]
-	BCD= sys.argv[5]
-	
 	dssp_list_ABCD=parse_dssp(ABCD)
+	A_acc_ABCD= sum(get_chain_acc(dssp_list_ABCD,'A'))
+	B_acc_ABCD= sum(get_chain_acc(dssp_list_ABCD,'B'))
+	C_acc_ABCD= sum(get_chain_acc(dssp_list_ABCD,'C'))
+	D_acc_ABCD= sum(get_chain_acc(dssp_list_ABCD,'D'))
+	
+	ABC= sys.argv[2]
 	dssp_list_ABC=parse_dssp(ABC)
+	A_acc_ABC= sum(get_chain_acc(dssp_list_ABC,'A'))
+	B_acc_ABC= sum(get_chain_acc(dssp_list_ABC,'B'))
+	C_acc_ABC= sum(get_chain_acc(dssp_list_ABC,'C'))
+	
+	ABD= sys.argv[3]
 	dssp_list_ABD=parse_dssp(ABD)
+	A_acc_ABD= sum(get_chain_acc(dssp_list_ABD,'A'))
+	B_acc_ABD= sum(get_chain_acc(dssp_list_ABD,'B'))
+	D_acc_ABD= sum(get_chain_acc(dssp_list_ABD,'D'))
+	
+	ACD= sys.argv[4]
 	dssp_list_ACD=parse_dssp(ACD)
+	A_acc_ACD= sum(get_chain_acc(dssp_list_ACD,'A'))
+	C_acc_ACD= sum(get_chain_acc(dssp_list_ACD,'C'))
+	D_acc_ACD= sum(get_chain_acc(dssp_list_ACD,'D'))
+	
+	BCD= sys.argv[5]
 	dssp_list_BCD=parse_dssp(BCD)
+	B_acc_BCD= sum(get_chain_acc(dssp_list_BCD,'B'))
+	C_acc_BCD= sum(get_chain_acc(dssp_list_BCD,'C'))
+	D_acc_BCD= sum(get_chain_acc(dssp_list_BCD,'D'))
+	
+	A=sys.argv[6]
+	dssp_list_A=parse_dssp(A)
+	B=sys.argv[7]
+	dssp_list_B=parse_dssp(B)
+	C=sys.argv[8]
+	dssp_list_C=parse_dssp(C)
+	D=sys.argv[9]
+	dssp_list_D=parse_dssp(D)
+	
+	#to know interaction surface between A and B I look at the surface accessibility of A in the tetramer and compare it with the trimer ACD
+	textfile = open('SurfaceInteractions.txt','w')
+	textfile.write('Surface of interaction of A with B: '+str(statistics.mean([A_acc_ACD-A_acc_ABCD,B_acc_BCD-B_acc_ABCD]))+ 'Å²\n')
+	
+	#I repeat it for all the other interactions
+	textfile.write('Surface of interaction of A with C: '+str(statistics.mean([A_acc_ABD-A_acc_ABCD,C_acc_BCD-C_acc_ABCD]))+ 'Å²\n')
+	textfile.write('Surface of interaction of A with D: '+str(statistics.mean([A_acc_ABC-A_acc_ABCD, D_acc_BCD-D_acc_ABCD]))+ 'Å²\n')
+	textfile.write('Surface of interaction of B with D: '+str(statistics.mean([B_acc_ABC-B_acc_ABCD,D_acc_ACD-D_acc_ABCD]))+ 'Å²\n')
+	textfile.write('Surface of interaction of B with C: '+str(statistics.mean([B_acc_ABD-B_acc_ABCD,C_acc_ACD-C_acc_ABCD]))+ 'Å²\n')
+	textfile.write('Surface of interaction of C with D: '+str(statistics.mean([C_acc_ABC-C_acc_ABCD, D_acc_ABD-D_acc_ABCD]))+ 'Å²\n')
+	textfile.close()
+	
+	#and i compare each residue's accessibilty in the monomer and in the complex to see what are the ones that show greater difference, which will probably be the interacting ones
+	A_acc = get_chain_acc(dssp_list_A,'A')
+	B_acc = get_chain_acc(dssp_list_B,'B')
+	C_acc = get_chain_acc(dssp_list_C,'C')
+	D_acc = get_chain_acc(dssp_list_D,'D')
+	
+	'''A_resid=inter_resid(dssp_list_A,dssp_list_ABCD,'A')
+	B_resid=inter_resid(dssp_list_B,dssp_list_ABCD,'B')
+	C_resid=inter_resid(dssp_list_C,dssp_list_ABCD,'C')
+	D_resid=inter_resid(dssp_list_D,dssp_list_ABCD,'D')'''
 	
 	
-	
-	#./parse_pdb_project.py ../data/1gzxABCD.dssp 1gzxABC.dssp 1gzxABD.dssp  1gzxACD.dssp 1gzxBCD.dssp
-	print(get_chain_acc(dssp_list_ABCD))
-	seq,ss=get_ss(dssp_list)
-	print ('>SEQ\n%s' %seq)
-	print ('>SS\n%s' %ss)
-	print ('H count:',count_ss(ss,'H'))
-	print ('E count:',count_ss(ss,'E'))
-	h_angles=get_ss_angle(dssp_list,'H')
-	e_angles=get_ss_angle(dssp_list,'E')
-	print ('H angles:',np.mean([i[0] for i in h_angles]),np.mean([i[1] for i in h_angles]))
-	print ('E angles:',np.mean([i[0] for i in e_angles]),np.mean([i[1] for i in e_angles]))
-	print ('K acc:',np.mean(get_aa_acc(dssp_list,'K'))/Norm_Acc['K'])
-	print ('V acc:',np.mean(get_aa_acc(dssp_list,'V'))/Norm_Acc['V'])
 
+	#./parse_pdb_project.py ../data/1gzxABCD.dssp 1gzxABC.dssp 1gzxABD.dssp  1gzxACD.dssp 1gzxBCD.dssp
+	
 
    
    
