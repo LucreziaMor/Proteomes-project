@@ -1,0 +1,282 @@
+# Copies and Copyright-Notice
+#
+#      RegulonDB is free for academic/noncommercial use
+#
+#      User is not entitled to change or erase data sets of the RegulonDB
+#      database or to eliminate copyright notices from RegulonDB. Furthermore,
+#      User is not entitled to expand RegulonDB or to integrate RegulonDB partly
+#      or as a whole into other databank systems, without prior written consent
+#      from CCG-UNAM.
+#
+#      Please check the license at http://regulondb.ccg.unam.mx/menu/download/full_version/terms_and_conditions.jsp
+#
+# Citation
+#
+#      Santos-Zavaleta A et al. (2019). RegulonDB v 10.5: tackling challenges to unify classic and high throughput knowledge of gene regulation in E. coli K-12.,
+#      Nucleic Acids Res. 2019 Jan 8;47(D1):D212-D220. doi: 10.1093/nar/gky1077.
+#
+#
+#
+#  TF family data publication:
+#      Gama-Castro S, Salgado H, Santos-Zavaleta A, Ledezma- Tejeida D, Muñiz-Rascado L,
+#      García-Sotelo JS, Alquicira-Hernández K, Martínez-Flores I, Pannier L, Castro- Mondragón JA,
+#      Medina-Rivera A, Solano-Lira H, Bonavides-Martínez C, Pérez-Rueda E, Alquicira-Hernández S,
+#      Porrón-Sotelo L, López-Fuentes A, Hernández-Koutoucheva A, Moral-Chávez VD, Rinaldi F,
+#      Collado-Vides J. RegulonDB version 9.0: high-level integration of gene regulation, coexpression,
+#      motif clustering and beyond., Nucleic Acids Research,2016, Vol.44, Pag.133-143.ISSN: 0305-1048
+#
+#  TF Sensing Class data publication:
+#      Martínez-Antonio A, Janga SC, Salgado H and Collado-Vides J. Internal-sensing machinery directs the activity of
+#      the regulatory network in Escherichia coli. Trends Microbiol. 2006.  Jan;14(1):22-7.
+#
+#  TF Connectivity Class data publication:
+#      Martínez-Antonio A, Collado-Vides J. Identifying global regulators in transcriptional regulatory networks in bacteria.
+#      Curr Opin Microbiol. 2003 Oct;6(5):482-9
+#
+#
+# Contact
+#
+#      Person: RegulonDB Team
+#      Web Page: http://regulondb.ccg.unam.mx/menu/about_regulondb/contact_us/index.jsp
+#          (regulondb@ccg.unam.mx)
+#
+#
+# Release: 10.9 Date: 06/29/2021
+# Genome version: U00096.3, Refseq version: NC_000913.3; GI:556503834
+# ___________________________________________________________________________
+# Columns:
+# (1) Transcription Factor (TF) identifier assigned by RegulonDB
+# (2) TF Name
+# (3) Gene Coding for the TF
+# (4) TF Active Conformations
+# (5) TF Inactive Conformations
+# (6) Effector Name related to  TF Active Conformations
+# (7) Effector Name related to  TF Inactive Conformations
+# (8) TF Symmetry
+# (9) TF Family
+# (10) TF Connectivity Class
+# (11) TF Sensing Class
+# (12) Evidence that supports the TF conformation [Evidence code | Evidence type: C = Confirmed, S = Strong, W = Weak | Evidence name ]
+# (13) Evidence confidence level (Confirmed, Strong, Weak)
+# (14) TF conformation reference identifier (PMID)
+ECK125286586	AccB	accB	AccB						Local Regulator		[IE|W|Inferred from experiment]	Weak	2575489, 2660106, 2822655, 7945216
+ECK120015994	AcrR	acrR	AcrR	AcrR-ethidium | AcrR-Proflavin | AcrR-R6G		ethidium | Proflavin | R6G	inverted-repeat	TetR/AcrR	Local Regulator		[GEA|W|Gene expression analysis], [IMP|W|Inferred from mutant phenotype], [APPH|S|Assay of protein purified  to homogeneity], [IEP|W|Inferred from expression pattern]	Strong	18607081, 8821940
+ECK120012595	Ada	ada	Ada | Ada-Methylated		Methyl		inverted-repeat	AraC/XylS	Local Regulator	Using internal synthesized signals	[IDA|S|Inferred from direct assay], [IMP|W|Inferred from mutant phenotype], [APPH|S|Assay of protein purified  to homogeneity], [APPHINH|S|Assay of protein purified to homogeneity from its native host]	Strong	11284682, 15305584, 15305585, 16452614, 1995192, 2002008, 2536670, 282622, 2982792, 2987251, 29941584, 3009022, 3047400, 3141384, 3343221, 3526284, 3529081, 3889845, 7896807, 7937881, 8195077, 8676855, 8720133, 8752326, 8755711, 9383376, 9582376
+ECK120014170	AdiY	adiY	AdiY				inverted-repeat	AraC/XylS	Local Regulator		[GEA|W|Gene expression analysis], [HIFS|W|Human inference of function from sequence]	Weak	8704970
+ECK120012515	AgaR	agaR	AgaR				direct-repeat	DeoR	Local Regulator	External sensing using transported metabolites	[APPH|S|Assay of protein purified  to homogeneity], [IEP|W|Inferred from expression pattern]	Strong	14731281
+ECK125134683	AidB	aidB	AidB-isovaleryl-CoA					AidB_like	Local Regulator				15977811
+ECK120030264	AlaS	alaS	AlaS-L-alanine	AlaS	L-alanine		inverted-repeat	Class II aminoacyl_tRNA synthetase	Local Regulator				20179335, 23536244, 24493149, 25918376, 27622773
+ECK120015630	AllR	allR	AllR-allantoin | AllR	AllR-glyox	allantoin	glyoxylate	inverted-repeat	IclR	Local Regulator	External sensing using transported metabolites	[IEP|W|Inferred from expression pattern], [AUP|W|Assay of unpurified protein ]	Weak	10601204, 12460564
+ECK120015636	AllS	allS	AllS-allantoin	AllS	allantoin			LysR	Local Regulator	Sensing external and internal signals			
+ECK120012984	AlpA	alpA	AlpA				inverted-repeat	AlpA	Local Regulator		[IMP|W|Inferred from mutant phenotype]	Weak	7511582
+ECK120011959	AlsR	alsR	AlsR	AlsR-D-allose		D-allose	inverted-repeat	RpiR	Local Regulator	External sensing using transported metabolites	[GEA|W|Gene expression analysis], [AIFS|W|Automated inference of function from sequence]	Weak	8576032, 9401019
+ECK120012987	AppY	appY	AppY				inverted-repeat	AraC/XylS	Local Regulator		[IE|W|Inferred from experiment]	Weak	2537825, 27718375, 3295784, 8071219
+ECK120012316	AraC	araC	AraC | AraC-arabinose | AraC	AraC-D-fucose	&alpha;-L-arabinopyranose	D-fucose	inverted-repeat	AraC/XylS	Local Regulator	Sensing external and internal signals			2231717, 7768852
+ECK120011345	ArcA	arcA	ArcA-Phosphorylated	ArcA	Phosphate			OmpR	Global Regulator	External-Two-component systems	[GEA|W|Gene expression analysis], [APPH|S|Assay of protein purified  to homogeneity], [AIFS|W|Automated inference of function from sequence]	Strong	12486057, 1482126, 16849788, 2157156, 2984198, 7699720, 8098993
+ECK120011202	ArgP	argP	ArgP-arginine | ArgP	ArgP-lysine	L-arginine	L-lysine		LysR	Local Regulator	Using internal synthesized signals			2034653, 8825783, 9819053
+ECK120011670	ArgR	argR	ArgR-L-arginine	ArgR	L-arginine			ArgR	Local Regulator	Sensing external and internal signals			3116542, 3149585, 4555419, 7997172
+ECK120030724	ArsR	arsR	ArsR	ArsR-antimonite | ArsR-arsenite		antimonite | arsenite		ArsR	Local Regulator	External sensing using transported metabolites			
+ECK120026318	AscG	ascG	AscG				asymmetric, inverted-repeat	GalR/LacI	Local Regulator	External sensing using transported metabolites	[GEA|W|Gene expression analysis], [HIFS|W|Human inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host]	Strong	1630307, 19633077
+ECK120013010	AsnC	asnC	AsnC	AsnC-L-asparagine		L-asparagine	inverted-repeat	AsnC	Local Regulator	Sensing external and internal signals			6357950, 7686882
+ECK120013014	AtoC	atoC	AtoC-P	AtoC	Phosphate			EBP	Local Regulator	External-Two-component systems	[GEA|W|Gene expression analysis], [HIFS|W|Human inference of function from sequence]	Weak	1482126, 2157156, 2883171, 7699720, 8098993, 8346225
+ECK120015687	BaeR	baeR	BaeR-Phosphorylated	BaeR	Phosphate		inverted-repeat	OmpR	Local Regulator	External-Two-component systems	[GEA|W|Gene expression analysis], [APPH|S|Assay of protein purified  to homogeneity]	Strong	12107134, 1482126, 2157156, 7699720, 8098993
+ECK125145855	BasR	basR	BasR-Phosphorylated	BasR	Phosphate		inverted-repeat	OmpR	Local Regulator	External-Two-component systems	[IDA|S|Inferred from direct assay], [AIFS|W|Automated inference of function from sequence]	Strong	10373459, 11222580, 1482126, 15522865, 15556475, 15569938, 15659161, 17686460, 2157156, 7565089, 7699720, 8098993
+ECK120013017	BetI	betI	BetI	BetI-choline		choline	inverted-repeat	TetR/AcrR	Local Regulator	External sensing using transported metabolites	[APPH|S|Assay of protein purified  to homogeneity], [IEP|W|Inferred from expression pattern], [HIFS|W|Human inference of function from sequence]	Strong	1956285, 8626295
+ECK120012646	BirA	birA	BirA-biotinyl-5'-adenylate	BirA	biotinyl-5'-adenylate			BirA	Local Regulator	Using internal synthesized signals	[IPI|W|Inferred from physical interaction], [HIFS|W|Human inference of function from sequence]	Weak	1097077, 11106165, 3325774, 350835, 3536662, 366433, 3899863, 6456358, 7024555, 7945216, 9750231
+ECK120051438	BluR	bluR	BluR				inverted-repeat	MerR	Local Regulator		[APPH|S|Assay of protein purified  to homogeneity], [HIFS|W|Human inference of function from sequence], [IEP|W|Inferred from expression pattern]	Strong	15556475, 19240136
+ECK120029348	BolA	bolA	BolA-phosphate				inverted-repeat	BolA	Local Regulator	External-Two-component systems	[GEA|W|Gene expression analysis], [HIFS|W|Human inference of function from sequence]	Weak	12354237, 2684651, 3053647
+ECK125145850	BtsR	btsR	BtsR-Phosphorylated	BtsR	Phosphate			LytTR	Local Regulator	External-Two-component systems	[IMP|W|Inferred from mutant phenotype], [HIFS|W|Human inference of function from sequence]	Weak	12618449, 12951338
+ECK120011235	CRP	crp	CRP-cAMP	CRP	cyclic-AMP			CRP	Global Regulator	Using internal synthesized signals	[GEA|W|Gene expression analysis], [IMP|W|Inferred from mutant phenotype], [APPH|S|Assay of protein purified  to homogeneity], [AIFS|W|Automated inference of function from sequence]	Strong	10760178, 11742992, 12923087, 1328816, 14638413, 15520470, 16166533, 7551052, 8604346
+ECK125286587	CRP-Sxy	crp, sxy	CRP-Sxy						Local Regulator		[IMP|W|Inferred from mutant phenotype]	Weak	31543875
+ECK120011250	CadC	cadC	CadC				inverted-repeat	OmpR	Local Regulator	External sensing using transported metabolites	[IMP|W|Inferred from mutant phenotype]	Weak	1370290, 18086202, 7830562
+ECK120013805	CaiF	caiF	CaiF-L-carnitine	CaiF	L-carnitine			CaiF	Local Regulator	External sensing using transported metabolites			10564497, 8631699, 9573142
+ECK120013750	Cbl	cbl	Cbl	Cbl-APS | Cbl-Thiosulphate		Thiosulphate | adenosine 5'-phosphosulfate	inverted-repeat	LysR	Local Regulator	Using internal synthesized signals	[IE|W|Inferred from experiment]	Weak	
+ECK120011953	CdaR	cdaR	CdaR				inverted-repeat	Cdar	Local Regulator	Using internal synthesized signals	[GEA|W|Gene expression analysis], [IFC|S|Inferred by functional complementation]	Strong	10762278, 14645248
+ECK125230705	CecR	cecR	CecR				inverted-repeat	TetR/AcrR	Local Regulator		[IPI|W|Inferred from physical interaction], [HIFS|W|Human inference of function from sequence], [IEP|W|Inferred from expression pattern], [AUPEINH|W|Assay of unpurified protein expressed in its native host]	Weak	10734204, 15556475, 27112147, 30137486, 30578262
+ECK120012036	ChbR	chbR	ChbR--monoacetylchitobiose 6'-phosphate | ChbR		<i>N</i>-monoacetylchitobiose 6'-phosphate		asymmetric	AraC/XylS	Local Regulator	External sensing using transported metabolites			15066032, 2179047
+ECK125141239	ComR	comR	ComR	ComR-Cu		Cu<SUP>+</SUP>	inverted-repeat	TetR/AcrR	Local Regulator		[AIFS|W|Automated inference of function from sequence], [IEP|W|Inferred from expression pattern], [APPHINH|S|Assay of protein purified to homogeneity from its native host]	Strong	15556475, 22089859
+ECK120011210	CpxR	cpxR	CpxR-Phosphorylated	CpxR	Phosphate			OmpR	Local Regulator	External-Two-component systems	[IPI|W|Inferred from physical interaction], [IEP|W|Inferred from expression pattern], [HIFS|W|Human inference of function from sequence]	Weak	1482126, 15686558, 16077119, 16487683, 2157156, 7699720, 7883164, 8098993, 8294007, 9159398
+ECK120013112	Cra	cra	Cra	Cra-&beta;-D-fructofuranose 1-phosphate | Cra-&beta;-D-fructose 1,6-bisphosphate | Cra-;-D-fructose 1,6-bisphosphate		&beta;-D-fructofuranose 1-phosphate	inverted-repeat	GalR/LacI	Local Regulator	Using internal synthesized signals			1630901, 1851954, 2198273, 8230205, 9371462
+ECK120035002	CreB	creB	CreB-Phosphorylated	CreB	Phosphate			OmpR	Local Regulator	External-Two-component systems			1482126, 2157156, 7699720, 7855419, 8098993
+ECK120013342	CsgD	csgD	CsgD				asymmetric	LuxR/UhpA	Local Regulator		[IE|W|Inferred from experiment]	Weak	
+ECK120013061	CspA	cspA	CspA				asymmetric	Cold	Local Regulator		[APPH|S|Assay of protein purified  to homogeneity], [IEP|W|Inferred from expression pattern]	Strong	19486664, 1961761, 28334975, 32753505, 3553157, 8995247
+ECK125285349	CsqR	csqR	CsqR	CsqR-6-sulfo-D-quinovose		6-sulfo-D-quinovose	inverted-repeat		Local Regulator		[HIFS|W|Human inference of function from sequence], [IEP|W|Inferred from expression pattern], [APPHINH|S|Assay of protein purified to homogeneity from its native host]	Strong	10734204, 15556475, 29453395, 30372406
+ECK125288994	CueR	cueR	CueR-Cu | CueR-Ag | CueR-Au	CueR	Ag | Cu<SUP>+</SUP> | Au		inverted-repeat		Local Regulator	External sensing using transported metabolites	[GEA|W|Gene expression analysis], [IFC|S|Inferred by functional complementation], [APPH|S|Assay of protein purified  to homogeneity]	Strong	10915804, 11136469, 11167016, 12446701, 15773991
+ECK120011941	CusR	cusR	CusR-P	CusR	Phosphate			OmpR	Local Regulator	External-Two-component systems	[IE|W|Inferred from experiment]	Weak	11514505, 30530842
+ECK120013065	CynR	cynR	CynR | CynR-cyanate		cyanate		inverted-repeat	LysR	Local Regulator	External sensing using transported metabolites			1592818, 7961413, 8253686
+ECK120011312	CysB	cysB	CysB | CysB--acetyl-L-serine | CysB-N-acetyl-L-serine	CysB-Sulphide | CysB-Thiosulfate	N-acetyl-L-serine | <i>O</i>-acetyl-L-serine	Sulphide | Thiosulphate		LysR	Local Regulator	Sensing external and internal signals			1435253, 1541275, 2182030, 3032952, 3094306
+ECK120012407	CytR	cytR	CytR	CytR-cytidine		cytidine	inverted-repeat	GalR/LacI	Local Regulator	Sensing external and internal signals			2162050, 2162467, 3515317, 8346018
+ECK120051451	Dan	ttdR	Dan-L-tartrate	Dan	L-tartrate			LysR	Local Regulator		[IDA|S|Inferred from direct assay], [HIFS|W|Human inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [IEP|W|Inferred from expression pattern], [APPPINH|W|Assay of protein partially-purified from its native host]	Strong	10734204, 15556475, 19661178, 20156994
+ECK125286588	DcuR	dcuR	DcuR-P	DcuR	Phosphate		inverted-repeat	OmpR	Local Regulator	External-Two-component systems	[GEA|W|Gene expression analysis], [IFC|S|Inferred by functional complementation]	Strong	9765574
+ECK125235978	DecR	decR	DecR				inverted-repeat	AsnC	Local Regulator		[IPI|W|Inferred from physical interaction], [HIFS|W|Human inference of function from sequence], [IEP|W|Inferred from expression pattern], [APPPINH|W|Assay of protein partially-purified from its native host]	Weak	10734204, 10850996, 15556475, 27435271, 30137486
+ECK120012664	DeoR	deoR	DeoR	DeoR-Deoxyribose-5-phosphate		Deoxyribose-5-phosphate	inverted-repeat	DeoR	Local Regulator	Using internal synthesized signals	[IE|W|Inferred from experiment]	Weak	2653814, 2994018
+ECK125285348	DgoR	dgoR	DgoR	DgoR-D-galactonate		D-galactonate	inverted-repeat		Local Regulator		[IDA|S|Inferred from direct assay], [IPI|W|Inferred from physical interaction], [HIFS|W|Human inference of function from sequence], [IEP|W|Inferred from expression pattern], [APPPINH|W|Assay of protein partially-purified from its native host]	Strong	11756427, 15556475, 29728462, 30455279
+ECK120015690	DhaR	dhaR	DhaR	DhaR-DhaK		DhaK	inverted-repeat	EBP	Local Regulator		[IMP|W|Inferred from mutant phenotype]	Weak	15616579
+ECK120029345	DicA	dicA	DicA				inverted-repeat	HTH_3	Local Regulator		[IFC|S|Inferred by functional complementation], [HIFS|W|Human inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [IEP|W|Inferred from expression pattern]	Strong	23028867, 3041373, 3053647
+ECK125257188	DinJ-YafQ	dinJ, yafQ	DinJ-YafQ				inverted-repeat		Local Regulator		[IDA|S|Inferred from direct assay], [IGI|W|Inferred from genetic interaction]	Strong	17263853, 19210620
+ECK120011903	DnaA	dnaA	DnaA-ATP	DnaA	ATP			DnaA	Local Regulator	Using internal synthesized signals	[APPHINH|S|Assay of protein purified to homogeneity from its native host]	Strong	10497067, 160412, 27484197, 337131, 6296774, 6310593, 6327277, 9125116
+ECK120034476	DpiA	dpiA	DpiA-P	DpiA	Phosphate		inverted-repeat	HTH_11	Local Regulator	External-Two-component systems			
+ECK120013081	DsdC	dsdC	DsdC-D-serine	DsdC	D-serine		inverted-repeat	LysR	Local Regulator	Sensing external and internal signals			6296057, 7592420
+ECK120013085	EbgR	ebgR	EbgR				inverted-repeat	GalR/LacI	Local Regulator		[IE|W|Inferred from experiment]	Weak	
+ECK120035026	EnvR	envR	EnvR				inverted-repeat	TetR/AcrR	Local Regulator		[APPH|S|Assay of protein purified  to homogeneity], [HIFS|W|Human inference of function from sequence]	Strong	18567659, 7592375, 8196548
+ECK120011792	EnvY	envY	EnvY				inverted-repeat	AraC/XylS	Local Regulator		[IE|W|Inferred from experiment]	Weak	2536924
+ECK120011575	EvgA	evgA	EvgA-Phosphorylated	EvgA	Phosphate			LuxR/UhpA	Local Regulator	External-Two-component systems			
+ECK120012141	ExuR	exuR	ExuR-&alpha;-D-galacturonate, &alpha;-D-glucuronate | ExuR	ExuR-&alpha;-D-glucuronate	&alpha;-D-galacturonate | &alpha;-D-glucuronate	&alpha;-D-glucuronate	inverted-repeat	GntR	Local Regulator	External sensing using transported metabolites	[IE|W|Inferred from experiment]	Weak	6357945
+ECK120011229	FNR	fnr	FNR | FNR-[4Fe-4S] reduced	FNR-[2Fe-2S] oxidized	[4Fe-4S]<sup>2+</sup> reduced	[2Fe-2S]<sup>2+</sup> oxidized	inverted-repeat	CRP	Global Regulator	Using internal synthesized signals	[AIFS|W|Automated inference of function from sequence], [HIFS|W|Human inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [APPPINH|W|Assay of protein partially-purified from its native host]	Strong	11407111, 11771123, 11931557, 17293415, 1854188, 1957353, 2181237, 2248796, 2677602, 6292868, 7747934, 796407, 8119409, 8412675, 8588737, 8871401, 9230919, 9282732, 9990723
+ECK120011354	FabR	fabR	FabR				inverted-repeat	TetR/AcrR	Local Regulator		[IDA|S|Inferred from direct assay], [IPI|W|Inferred from physical interaction], [IEP|W|Inferred from expression pattern]	Strong	11160901, 11859088
+ECK120011824	FadR	fadR	FadR	FadR-acyl-CoA		an acyl-CoA	inverted-repeat	GntR	Local Regulator	Using internal synthesized signals	[APPH|S|Assay of protein purified  to homogeneity], [HIFS|W|Human inference of function from sequence], [IEP|W|Inferred from expression pattern]	Strong	11566998, 1569108, 2843809, 8446033, 9767562
+ECK120026337	FeaR	feaR	FeaR				inverted-repeat	AraC/XylS	Local Regulator		[GEA|W|Gene expression analysis], [HIFS|W|Human inference of function from sequence], [IEP|W|Inferred from expression pattern]	Weak	8631685, 9043126
+ECK120011394	FhlA	fhlA	FhlA-formate	FhlA	formate		inverted-repeat	EBP	Local Regulator	Using internal synthesized signals			2118503, 2280686, 8034727
+ECK120011186	Fis	fis	Fis				inverted-repeat	EBP	Global Regulator	TFs for DNA-bending			1547773, 27718375, 7545153
+ECK125257194	FlhDC	flhC, flhD	FlhDC				asymmetric		Local Regulator		[APPH|S|Assay of protein purified  to homogeneity]	Strong	12144778, 7961507
+ECK125141939	FliZ	fliZ	FliZ				inverted-repeat		Local Regulator		[IMP|W|Inferred from mutant phenotype]	Weak	18765794
+ECK125257185	FrmR	frmR	FrmR						Local Regulator				
+ECK120013118	FucR	fucR	FucR-L-fuculose-1-P	FucR	L-fuculose 1-phosphate			DeoR	Local Regulator	External sensing using transported metabolites			2664711, 3325779
+ECK125285350	Fur	fur	Fur-Fe	Fur	Fe<SUP>2+</SUP> | Mn<SUP>2+</SUP>		inverted-repeat		Local Regulator	External sensing using transported metabolites			1868094, 2015825, 2823881, 2993806, 7026976
+ECK120012092	GadE	gadE	GadE				asymmetric	LuxR/UhpA	Local Regulator		[IE|W|Inferred from experiment]	Weak	12399493, 12426343, 12657056, 12694615, 12704134, 12940989, 14702398, 30578262, 32094588
+ECK125257204	GadE-RcsB	gadE, rcsB	GadE-RcsB				asymmetric		Local Regulator		[APPHINH|S|Assay of protein purified to homogeneity from its native host]	Strong	20189963
+ECK120011465	GadW	gadW	GadW				asymmetric	AraC/XylS	Local Regulator		[IE|W|Inferred from experiment], [APPH|S|Assay of protein purified  to homogeneity]	Strong	12446650
+ECK120011458	GadX	gadX	GadX				asymmetric	AraC/XylS	Local Regulator		[GEA|W|Gene expression analysis], [APPH|S|Assay of protein purified  to homogeneity]	Strong	11976288, 12446650
+ECK120012713	GalR	galR	GalR-&beta;-D-galactose | GalR		D-galactose		inverted-repeat	GalR/LacI	Local Regulator	Sensing external and internal signals	[IPI|W|Inferred from physical interaction], [IMP|W|Inferred from mutant phenotype], [APPH|S|Assay of protein purified  to homogeneity], [IEP|W|Inferred from expression pattern]	Strong	12169637, 15533432, 15807530, 17630975, 6283521, 6350601, 7934815, 8188660, 9218807, 9325090
+ECK120012704	GalS	galS	GalS-&beta;-D-galactose | GalS		D-galactose		inverted-repeat	GalR/LacI	Local Regulator	Sensing external and internal signals	[IMP|W|Inferred from mutant phenotype], [APPH|S|Assay of protein purified  to homogeneity], [IEP|W|Inferred from expression pattern], [HIFS|W|Human inference of function from sequence]	Strong	1619663, 1900742, 7934815, 8416900, 8982002
+ECK120013131	GatR	gatR	GatR				inverted-repeat		Local Regulator	External sensing using transported metabolites			1661252, 7772602
+ECK120012465	GcvA	gcvA	GcvA	GcvA-gly | GcvA-Purine		glycine | Purine	inverted-repeat	LysR	Local Regulator	Sensing external and internal signals	[GEA|W|Gene expression analysis], [BPP|S|Binding of purified proteins], [HIFS|W|Human inference of function from sequence]	Strong	27718375, 7665470, 8188587, 8375392
+ECK120012075	GlaR	glaR	GlaR	GlaR-glutarate		glutarate	inverted-repeat	GntR	Local Regulator		[IMP|W|Inferred from mutant phenotype], [APPHINH|S|Assay of protein purified to homogeneity from its native host]	Strong	12446648, 2188954, 24037, 28061857, 30498244
+ECK120011437	GlcC	glcC	GlcC-glycolate | GlcC-Acetate	GlcC	glycolate | Acetate		inverted-repeat	GntR	Local Regulator	Sensing external and internal signals			
+ECK120012730	GlpR	glpR	GlpR	GlpR--glycerol 3-phosphate | GlpR-glycerol		<i>sn</i>-glycerol 3-phosphate | glycerol	inverted-repeat	DeoR	Local Regulator	Sensing external and internal signals	[IE|W|Inferred from experiment]	Weak	1556120, 3316209, 8955387
+ECK125108627	GlrR	glrR	GlrR-P	GlrR	Phosphate			EBP	Local Regulator	External-Two-component systems	[IMP|W|Inferred from mutant phenotype], [APPH|S|Assay of protein purified  to homogeneity], [HIFS|W|Human inference of function from sequence]	Strong	10734204, 15522865, 15556475, 19843219
+ECK120012096	GntR	gntR	GntR	GntR-D-gluconate		D-gluconate	inverted-repeat	GalR/LacI	Local Regulator	Sensing external and internal signals	[IE|W|Inferred from experiment]	Weak	4574690, 8655507
+ECK120013141	GutM	gutM	GutM				inverted-repeat	GutM	Local Regulator	External sensing using transported metabolites	[IEP|W|Inferred from expression pattern], [HIFS|W|Human inference of function from sequence]	Weak	3062173
+ECK120011294	H-NS	hns	H-NS				inverted-repeat	HNS	Global Regulator		[IPI|W|Inferred from physical interaction], [IMP|W|Inferred from mutant phenotype], [APPH|S|Assay of protein purified  to homogeneity], [HIFS|W|Human inference of function from sequence], [IEP|W|Inferred from expression pattern]	Strong	11278074, 15100692, 1537791, 15795232, 15853876, 16384714, 16879983, 1691451, 16980475, 17116239, 17553830, 17827501, 17881364, 2020545, 2126011, 2177526, 2841565, 3135462, 6370250, 7748941, 7934818, 8437561, 8890170, 9513262, 9987132
+ECK125257184	HU	hupA, hupB	HU				inverted-repeat		Local Regulator		[GEA|W|Gene expression analysis], [APPH|S|Assay of protein purified  to homogeneity], [AIFS|W|Automated inference of function from sequence]	Strong	10982882, 11254141, 11601842, 12372591, 227733, 350619, 3514923, 6987059, 9192630, 9218807
+ECK120015243	HcaR	hcaR	HcaR-HCA | HcaR		3-phenylpropanoate		inverted-repeat	LysR	Local Regulator				15808934, 9603882
+ECK120012250	HdfR	hdfR	HdfR				inverted-repeat	LysR	Local Regulator		[GEA|W|Gene expression analysis], [APPH|S|Assay of protein purified  to homogeneity], [APPPINH|W|Assay of protein partially-purified from its native host]	Strong	10913108, 21034467, 28484043
+ECK125286590	HicB	hicB	HicB				inverted-repeat	HTH_3	Local Regulator		[IGI|W|Inferred from genetic interaction], [IMP|W|Inferred from mutant phenotype], [AIFS|W|Automated inference of function from sequence]	Weak	15556475, 17172327, 19060138
+ECK125242732	HigA	higA	HigA					SinR	Local Regulator				
+ECK125257189	HigBA	higA, higB	HigBA				inverted-repeat		Local Regulator		[IHBCE|W|Inferred by a human based on computational evidence], [IMP|W|Inferred from mutant phenotype]	Weak	19943910, 27601326
+ECK125257201	HipAB	hipA, hipB	HipAB				inverted-repeat		Local Regulator		[APPH|S|Assay of protein purified  to homogeneity]	Strong	24089363, 8021189
+ECK120026325	HipB	hipB	HipB				inverted-repeat	HTH_3	Local Regulator				10844683, 24089363
+ECK125228798	HprR	hprR	HprR-P	HprR	Phosphate			OmpR	Local Regulator	External-Two-component systems	[ISM||Inferred from Sequence Model], [HIFS|W|Human inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [IEP|W|Inferred from expression pattern]	Strong	10734204, 15556475, 25568260
+ECK120011390	HyfR	hyfR	HyfR				inverted-repeat	EBP	Local Regulator		[IE|W|Inferred from experiment]	Weak	9387241
+ECK125141903	HypT	hypT	HypT-Met-oxidized		Met-oxidized			LysR	Local Regulator				
+ECK125257183	IHF	ihfA, ihfB	IHF				inverted-repeat		Global Regulator		[GEA|W|Gene expression analysis], [IMP|W|Inferred from mutant phenotype], [APPH|S|Assay of protein purified  to homogeneity], [IEP|W|Inferred from expression pattern]	Strong	7629095, 7651128, 7715442, 7862094, 8156991, 8230206, 8515442
+ECK120011897	IclR	iclR	IclR-pyruvate	IclR-glyox | IclR	pyruvate	glyoxylate		IclR	Local Regulator	Using internal synthesized signals	[IPI|W|Inferred from physical interaction], [IFC|S|Inferred by functional complementation], [APPH|S|Assay of protein purified  to homogeneity], [HIFS|W|Human inference of function from sequence]	Strong	12492863, 1447784, 1995429, 1995431, 2001680, 2185227, 8265357, 8550439
+ECK120012101	IdnR	idnR	IdnR-5-ketogluconate | IdnR | IdnR-Idonate		5-dehydro-D-gluconate | Idonate		inverted-repeat	GalR/LacI	Local Regulator	Sensing external and internal signals			11441462
+ECK120012965	IlvY	ilvY	IlvY-()-2-acetolactate | IlvY | IlvY-Alfa-acetohydroxybutirate		(<i>S</i>)-2-acetolactate | Alfa-acetohydroxybutirate		inverted-repeat	LysR	Local Regulator	Using internal synthesized signals			113381, 1379743, 3003115, 3062177
+ECK120011429	IscR	iscR	IscR-2Fe-2S | IscR		a [2Fe-2S] iron-sulfur cluster		inverted-repeat	Rrf2	Local Regulator		[IEP|W|Inferred from expression pattern]	Weak	11742080
+ECK120015250	KdgR	kdgR	KdgR				inverted-repeat	IclR	Local Regulator		[IMP|W|Inferred from mutant phenotype], [IEP|W|Inferred from expression pattern]	Weak	11566977, 15659677, 4359651
+ECK125286591	KdpE	kdpE	KdpE-P	KdpE	Phosphate		inverted-repeat	OmpR	Local Regulator	External-Two-component systems	[AIFS|W|Automated inference of function from sequence]	Weak	1482126, 1532388, 2157156, 7699720, 8098993
+ECK120012762	LacI	lacI	LacI	LacI-allolactose		allolactose	inverted-repeat	GalR/LacI	Local Regulator	Using internal synthesized signals	[IE|W|Inferred from experiment]	Weak	1107032, 13718526, 14430363, 2040302, 2178920, 2742823, 3064080, 3286877, 355891, 4571224, 4594037, 8046748
+ECK120013164	LeuO	leuO	LeuO				inverted-repeat	LysR	Local Regulator	Using internal synthesized signals	[GEA|W|Gene expression analysis], [IE|W|Inferred from experiment], [APPH|S|Assay of protein purified  to homogeneity]	Strong	11121424, 15582999, 16207917, 1630901, 3413113, 3519576, 7836317, 9422614
+ECK120012770	LexA	lexA	LexA				inverted-repeat	LexA	Local Regulator	Using internal synthesized signals			2780544, 6261224, 6272195, 7013987, 7027255, 7027256, 8076591, 8265357
+ECK120013830	LldR	lldR	LldR-()-lactate | LldR		(<i>S</i>)-lactate		inverted-repeat	GntR	Local Regulator	Sensing external and internal signals	[IDA|S|Inferred from direct assay]	Strong	18263722
+ECK120011328	LrhA	lrhA	LrhA				inverted-repeat	LysR	Local Regulator		[GEA|W|Gene expression analysis], [APPH|S|Assay of protein purified  to homogeneity], [HIFS|W|Human inference of function from sequence]	Strong	12123461, 7565112, 9882671
+ECK120011383	Lrp	lrp	Lrp-leucine | Lrp		L-leucine		inverted-repeat	AsnC	Global Regulator	Sensing external and internal signals			1346534, 1729203, 2040596, 7665463
+ECK120015681	LsrR	lsrR	LsrR	LsrR-(2)-2-hydroxy-3,4-dioxopentyl phosphate | LsrR-(2R,4S)-2-methyl-2,3,3,4-tetrahydroxytetrahydrofuran | LsrR-autoinducer 2		(2<i>S</i>)-2-hydroxy-3,4-dioxopentyl phosphate | autoinducer 2 | (2R,4S)-2-methyl-2,3,3,4-tetrahydroxytetrahydrofuran	inverted-repeat	Sugar_binding domain	Local Regulator				
+ECK120013175	LysR	lysR	LysR				inverted-repeat	LysR	Local Regulator	Sensing external and internal signals	[IE|W|Inferred from experiment]	Weak	6350602
+ECK120013406	MalI	malI	MalI				inverted-repeat	GalR/LacI	Local Regulator		[ICA|W|Inferred by computational analysis], [IEP|W|Inferred from expression pattern], [HIFS|W|Human inference of function from sequence]	Weak	1856179, 2670898
+ECK120012218	MalT	malT	MalT-maltotriose-ATP | MalT-maltotriose-ADP	MalT | MalT-Aes | MalT-MalK | MalT-MalY	maltotriose | maltotriose | ATP | ADP	Aes | MalY | MalK		LuxR/UhpA	Local Regulator	Using internal synthesized signals			2524384, 3015733
+ECK120011412	MarA	marA	MarA				asymmetric	AraC/XylS	Local Regulator		[IE|W|Inferred from experiment]	Weak	27105118, 31251753, 31438868, 8383113, 8491710, 8522515
+ECK120013191	MarR	marR	MarR	MarR-salicylate | MarR-2,4-dinitrophenol | MarR-Benzoate | MarR-Menadione | MarR-Paraquat | MarR-Phenazine methosulfate | MarR-Plumbagin | MarR-Sodium salicylate		Benzoate | Sodium salicylate | 2,4-dinitrophenol | salicylate | Menadione | Paraquat | Phenazine methosulfate | Plumbagin		MarR	Local Regulator				8282690, 8383113, 8521301
+ECK125141911	MatA	ecpR	MatA				inverted-repeat	LuxR/UhpA	Local Regulator		[AIFS|W|Automated inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [IEP|W|Inferred from expression pattern]	Strong	15556475, 22422754
+ECK125140737	MazE	mazE	MazE					MazE	Local Regulator				
+ECK125257200	MazE-MazF	mazE, mazF	MazE-MazF				inverted-repeat		Local Regulator		[IE|W|Inferred from experiment]	Weak	
+ECK120051441	McbR	mcbR	McbR				inverted-repeat	GntR	Local Regulator		[APPPHH|W|Assay of protein partially-purified from a heterologous host], [AIFS|W|Automated inference of function from sequence], [IEP|W|Inferred from expression pattern], [AUP|W|Assay of unpurified protein ]	Weak	15556475, 18309357, 20713450
+ECK120012347	MelR	melR	MelR-melibiose | MelR		melibiose		asymmetric	AraC/XylS	Local Regulator	Sensing external and internal signals			1445207, 2684786, 2830169, 8010957
+ECK120048948	MetJ	metJ	MetJ-S-adenosylmethionine	MetJ-adenine | MetJ-MTA | MetJ	<i>S</i>-adenosyl-L-methionine	adenine | <i>S</i>-methyl-5'-thioadenosine	asymmetric, inverted-repeat	MetJ	Local Regulator	Using internal synthesized signals			
+ECK120012802	MetR	metR	MetR | MetR-L-homocysteine		L-homocysteine			LysR	Local Regulator	Using internal synthesized signals			1379743, 2205852, 2643109
+ECK120011482	MhpR	mhpR	MhpR-3HPP | MhpR-3-(2,3-dihydroxyphenyl)propionate [DHPP]	MhpR	3-(2,3-dihydroxyphenyl)propionate [DHPP] | 3-(3-hydroxyphenyl)propanoate			IclR	Local Regulator	Sensing external and internal signals			
+ECK120011240	Mlc	mlc	Mlc	Mlc-EIIGlC		EIIGlc	inverted-repeat	ROK	Local Regulator		[BCE|W|Binding of cellular extracts], [APPH|S|Assay of protein purified  to homogeneity]	Strong	10464268, 10469172, 9484892, 9484893, 9767573
+ECK125134665	MlrA	mlrA	MlrA				inverted-repeat	MerR	Local Regulator		[IHBCE|W|Inferred by a human based on computational evidence], [AIFS|W|Automated inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [IEP|W|Inferred from expression pattern]	Strong	11489123, 12775697, 15556475, 20874755
+ECK120011949	MngR	mngR	MngR					GntR	Local Regulator	Using internal synthesized signals			7805834
+ECK125257190	MntR	mntR	MntR-Cd	MntR	Mn<SUP>2+</SUP> | Cd<sup>2+</sup>		inverted-repeat		Local Regulator		[IHBCE|W|Inferred by a human based on computational evidence], [IPI|W|Inferred from physical interaction], [HIFS|W|Human inference of function from sequence], [IEP|W|Inferred from expression pattern]	Weak	11466284, 21908668
+ECK120011220	ModE	modE	ModE-MoO	ModE	molybdate			LysR	Local Regulator	External sensing using transported metabolites			
+ECK120011593	MprA	mprA	MprA	MprA-CCCP | MprA-2,4-dinitrophenol | MprA-Carbonyl cyanide p-(trifluoro-methoxy)phenylhydrazone		carbonylcyanide <i>m</i>-chlorophenylhydrazone | 2,4-dinitrophenol | Carbonyl cyanide p-(trifluoro-methoxy)phenylhydrazone	inverted-repeat	MarR	Local Regulator				
+ECK120051460	MqsA	mqsA	MqsA				inverted-repeat	CxxCG_CxxCG_HTH, MqsR	Local Regulator		[AIFS|W|Automated inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host]	Strong	15556475, 19690171, 20105222
+ECK125165914	MraZ	mraZ	MraZ				inverted-repeat		Local Regulator		[IPI|W|Inferred from physical interaction], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [IEP|W|Inferred from expression pattern], [HIFS|W|Human inference of function from sequence]	Strong	24659771
+ECK120048826	MurR	murR	MurR	MurR-MurNAc-6-P		<i>N</i>-acetyl-D-muramate 6-phosphate		RpiR	Local Regulator				
+ECK120011265	Nac	nac	Nac				inverted-repeat	LysR	Local Regulator		[IDA|S|Inferred from direct assay], [IFC|S|Inferred by functional complementation], [HIFS|W|Human inference of function from sequence]	Strong	11121068, 9495755
+ECK120013202	NadR	nadR	NadR				inverted-repeat	HTH_3	Local Regulator				
+ECK120011908	NagC	nagC	NagC	NagC--acetyl-D-glucosamine 6-phosphate		<i>N</i>-acetyl-D-glucosamine 6-phosphate	inverted-repeat	MarR	Local Regulator	External sensing using transported metabolites	[APPH|S|Assay of protein purified  to homogeneity]	Strong	11139621, 15066032, 15534208, 15743943, 17238917, 1766379, 1848637, 2190615, 2668691, 7545108
+ECK120012559	NanR	nanR	NanR	NanR-NANA		<i>N</i>-acetylneuraminate	asymmetric	GntR	Local Regulator	External sensing using transported metabolites	[IFC|S|Inferred by functional complementation], [APPH|S|Assay of protein purified  to homogeneity]	Strong	12897000
+ECK120011502	NarL	narL	NarL-Phosphorylated	NarL	Phosphate			LuxR/UhpA	Local Regulator	External-Two-component systems	[AIFS|W|Automated inference of function from sequence]	Weak	1482126, 2066339, 2157156, 2648330, 2649492, 2657652, 7643383, 7699720, 7854119, 8098993, 8501030
+ECK120011508	NarP	narP	NarP-Phosphorylated	NarP	Phosphate		inverted-repeat	LuxR/UhpA	Local Regulator	External-Two-component systems	[AIFS|W|Automated inference of function from sequence]	Weak	1482126, 15978080, 2157156, 7699720, 8098993, 8501030, 9302020
+ECK120035042	NemR	nemR	NemR	NemR-methylglyoxal		methylglyoxal	inverted-repeat	TetR/AcrR	Local Regulator		[APPH|S|Assay of protein purified  to homogeneity], [HIFS|W|Human inference of function from sequence]	Strong	15556475, 18567656
+ECK125134855	NfeR	nfeR	NfeR	NfeR-Ni		Fe<SUP>2+</SUP> | Ni<SUP>2+</SUP>	inverted-repeat	PadR	Local Regulator				
+ECK120011378	NhaR	nhaR	NhaR-Na	NhaR	Na<SUP>+</SUP>			LysR	Local Regulator	External sensing using transported metabolites			1316901, 1630901, 2429258, 3413113, 8168494
+ECK120023539	NikR	nikR	NikR-Ni	NikR	Ni<SUP>2+</SUP> | Cu<SUP>+</SUP> | Cd<sup>2+</sup> | Zn<SUP>2+</SUP> | Co<SUP>2+</SUP>		inverted-repeat	CopG	Local Regulator				
+ECK125228822	NimR	nimR	NimR				inverted-repeat	AraC/XylS	Local Regulator		[AIFS|W|Automated inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [IEP|W|Inferred from expression pattern]	Strong	15556475, 25790494
+ECK120011938	NorR	norR	NorR				inverted-repeat	EBP	Local Regulator		[IDA|S|Inferred from direct assay], [IMP|W|Inferred from mutant phenotype], [APPH|S|Assay of protein purified  to homogeneity], [IEP|W|Inferred from expression pattern]	Strong	11751865, 12142437, 12529359, 14718666, 15375149, 16193057, 7894055
+ECK120033053	NrdR	nrdR	NrdR-Zn | NrdR-dATP | NrdR-ATP	NrdR	dATP | Zn<SUP>2+</SUP> | ATP			NrdR	Local Regulator				
+ECK120016814	NsrR	nsrR	NsrR | NsrR-[2Fe-2S]reduced	NsrR-nitric oxide | NsrR-[2Fe-2S] oxidized	[2Fe-2S] reduced	nitric oxide | [2Fe-2S]<sup>2+</sup> oxidized	inverted-repeat	Rrf2	Local Regulator				
+ECK125257192	NtrC	glnG	NtrC-P		Phosphate		inverted-repeat		Local Regulator	External-Two-component systems			10960104, 41243
+ECK125257196	OmpR	ompR	OmpR | OmpR-P		Phosphate		direct-repeat		Local Regulator	External-Two-component systems			
+ECK120011302	OxyR	oxyR	OxyR				inverted-repeat	LysR	Local Regulator	Using internal synthesized signals	[APPHINH|S|Assay of protein purified to homogeneity from its native host]	Strong	1864839, 2167922, 22539721, 2471187, 2511419, 2551682, 8265357, 8483417
+ECK120011563	PaaX	paaX	PaaX	PaaX-phenylacetyl-CoA		phenylacetyl-CoA	inverted-repeat	PaaX	Local Regulator	Using internal synthesized signals			10766858, 11243806
+ECK125242743	PdeL	pdeL	PdeL					LuxR/UhpA	Local Regulator				
+ECK120012246	PdhR	pdhR	PdhR	PdhR-pyruvate		pyruvate	inverted-repeat	GntR	Local Regulator	Using internal synthesized signals	[GEA|W|Gene expression analysis], [APPP|W|Assay of partially-purified protein ], [APPH|S|Assay of protein purified  to homogeneity], [HIFS|W|Human inference of function from sequence]	Strong	17513468, 2060763, 7783622, 8057842, 8262214
+ECK120020634	PepA	pepA	PepA				inverted-repeat	Aminopeptidase	Local Regulator				14741201
+ECK125158270	PgrR	pgrR	PgrR				inverted-repeat	LysR	Local Regulator		[HIFS|W|Human inference of function from sequence], [APPPINH|W|Assay of protein partially-purified from its native host]	Weak	10734204, 15556475, 23301696
+ECK120011306	PhoB	phoB	PhoB-Phosphorylated	PhoB	Phosphate		direct-repeat	OmpR	Local Regulator	External-Two-component systems	[GEA|W|Gene expression analysis], [APPH|S|Assay of protein purified  to homogeneity], [AIFS|W|Automated inference of function from sequence]	Strong	10986267, 1482126, 2157156, 3054125, 324866, 3537313, 6310121, 6343798, 7009567, 7699720, 7855419, 8098993
+ECK120011492	PhoP	phoP	PhoP-Phosphorylated	PhoP	Phosphate		direct-repeat	OmpR	Local Regulator	External-Two-component systems	[AIFS|W|Automated inference of function from sequence]	Weak	1482126, 1530848, 15703297, 2157156, 7699720, 8098993
+ECK120015234	PrpR	prpR	PrpR-(2)-2-methylcitrate	PrpR	(2<i>S</i>,3<i>S</i>)-2-methylcitrate			EBP	Local Regulator		[IDA|S|Inferred from direct assay]	Strong	15805526, 27718375
+ECK120011400	PspF	pspF	PspF | PspF				inverted-repeat	EBP	Local Regulator				
+ECK120012854	PurR	purR	PurR-hypoxanthine | PurR-Guanine	PurR	Guanine | hypoxanthine			GalR/LacI	Local Regulator	Using internal synthesized signals			2211510, 2404765, 3058704
+ECK120012029	PutA	putA	PutA				asymmetric	PutA	Local Regulator	External sensing using transported metabolites			11294639
+ECK125160661	PuuR	puuR	PuuR	PuuR-putrescine		putrescine	inverted-repeat	HTH_3	Local Regulator		[IMP|W|Inferred from mutant phenotype], [AIFS|W|Automated inference of function from sequence]	Weak	15556475, 15590624
+ECK125158264	PyrR	pyrR	PyrR-P | PyrR-BTS	PyrR	Phosphate | pyruvate				Local Regulator	External-Two-component systems			11361063
+ECK120012277	QseB	qseB	QseB-Phosphorylated	QseB	Phosphate		inverted-repeat	OmpR	Local Regulator	External-Two-component systems	[IE|W|Inferred from experiment]	Weak	11929534
+ECK125257199	RacR	racR	RacR				inverted-repeat		Local Regulator		[IHBCE|W|Inferred by a human based on computational evidence], [AIFS|W|Automated inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [IEP|W|Inferred from expression pattern]	Strong	10734204, 15556475, 29205228, 29205229
+ECK120013229	RbsR	rbsR	RbsR-D-ribose | RbsR		D-ribose		inverted-repeat	GalR/LacI	Local Regulator	External sensing using transported metabolites	[IE|W|Inferred from experiment]	Weak	1304370, 7686882
+ECK125158217	RcdA	rcdA	RcdA				inverted-repeat	TetR/AcrR	Local Regulator		[IMP|W|Inferred from mutant phenotype], [APPH|S|Assay of protein purified  to homogeneity], [AIFS|W|Automated inference of function from sequence], [IEP|W|Inferred from expression pattern]	Strong	15556475, 23233451
+ECK125162247	RclR	rclR	RclR				inverted-repeat	AraC/XylS	Local Regulator		[HIFS|W|Human inference of function from sequence]	Weak	10734204, 15556475
+ECK120033010	RcnR	rcnR	RcnR	RcnR-Ni		Co<SUP>2+</SUP> | Ni<SUP>2+</SUP>	inverted-repeat	RcnR_FrmR_like_DUF156	Local Regulator		[GEA|W|Gene expression analysis], [APPH|S|Assay of protein purified  to homogeneity]	Strong	16956381, 17120142, 19703465
+ECK125257195	RcsAB	rcsA, rcsB	RcsAB				inverted-repeat		Local Regulator		[GEA|W|Gene expression analysis], [IGI|W|Inferred from genetic interaction], [APPH|S|Assay of protein purified  to homogeneity]	Strong	10702265, 12864862, 16000739, 1943696, 1999391, 2404948, 8576059, 9882673
+ECK120011324	RcsB	rcsB	RcsB-P	RcsB	Phosphate			LuxR/UhpA	Local Regulator	External-Two-component systems	[IE|W|Inferred from experiment]	Weak	1482126, 1943696, 2157156, 2404948, 32094588, 7699720, 8098993, 8576059
+ECK125257193	RcsB-BglJ	bglJ, rcsB	RcsB-BglJ				asymmetric		Local Regulator		[IFC|S|Inferred by functional complementation], [IMP|W|Inferred from mutant phenotype], [IPI|W|Inferred from physical interaction], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [IEP|W|Inferred from expression pattern]	Strong	20952573
+ECK120048934	RelB	relB	RelB				inverted-repeat	RelB, RelE	Local Regulator				
+ECK125257202	RelB-RelE	relB, relE	RelB-RelE				inverted-repeat		Local Regulator		[ICWHO|W|Inferred computationally without human oversight], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [IEP|W|Inferred from expression pattern]	Strong	18501926
+ECK120012877	RhaR	rhaR	RhaR-L-rhamnose | RhaR-&alpha;-L-rhamnopyranose	RhaR	L-rhamnose | &alpha;-L-rhamnopyranose			AraC/XylS	Local Regulator	External sensing using transported metabolites			1339463, 1551902, 3316663, 8230210, 8346018
+ECK120012337	RhaS	rhaS	RhaS | RhaS-L-rhamnose | RhaS-&alpha;-L-rhamnopyranose		L-rhamnose | &alpha;-L-rhamnopyranose		asymmetric	AraC/XylS	Local Regulator	External sensing using transported metabolites			3316663, 8230210, 8346018
+ECK120011190	Rob	rob	Rob				asymmetric	AraC/XylS	Local Regulator		[IE|W|Inferred from experiment]	Weak	7896685, 8449900
+ECK120033066	RstA	rstA	RstA-Phosphorylated	RstA	Phosphate			OmpR	Local Regulator	External-Two-component systems			
+ECK120011489	RtcR	rtcR	RtcR				inverted-repeat	EBP	Local Regulator		[GEA|W|Gene expression analysis], [HIFS|W|Human inference of function from sequence]	Weak	9738023
+ECK120033905	RutR	rutR	RutR	RutR-thymine | RutR-uracil		thymine | uracil	inverted-repeat	TetR/AcrR	Local Regulator		[IMP|W|Inferred from mutant phenotype], [APPH|S|Assay of protein purified  to homogeneity], [HIFS|W|Human inference of function from sequence], [AIFS|W|Automated inference of function from sequence]	Strong	15556475, 16540542, 17919280
+ECK120011856	SdiA	sdiA	SdiA				inverted-repeat	LuxR/UhpA	Local Regulator	External sensing using transported metabolites	[IE|W|Inferred from experiment]	Weak	
+ECK120032161	SgrR	sgrR	SgrR				inverted-repeat	MarR	Local Regulator		[IMP|W|Inferred from mutant phenotype]	Weak	15522088
+ECK120012253	SlyA	slyA	SlyA				inverted-repeat	MarR	Local Regulator				
+ECK120013242	SoxR	soxR	SoxR | SoxR-[2Fe-2S] oxydized	SoxR-[2Fe-2S] reduced	[2Fe-2S]<sup>3+</sup> oxydized	[2Fe-2S]<sup>2+</sup> reduced	inverted-repeat	MerR	Local Regulator	Using internal synthesized signals	[APPHINH|S|Assay of protein purified to homogeneity from its native host]	Strong	11470373, 1400156, 1653416, 1708380, 7673113
+ECK120011298	SoxS	soxS	SoxS				asymmetric	AraC/XylS	Local Regulator		[IE|W|Inferred from experiment]	Weak	1653416, 1708380, 7891555, 7896696, 8034583, 8226698, 8265357
+ECK120013144	SrlR	srlR	SrlR	SrlR-D-sorbitol 		D-sorbitol	inverted-repeat	DeoR	Local Regulator	External sensing using transported metabolites	[IEP|W|Inferred from expression pattern], [HIFS|W|Human inference of function from sequence]	Weak	3062173
+ECK120034571	StpA	stpA	StpA				inverted-repeat	HNS	Local Regulator		[IE|W|Inferred from experiment]	Weak	
+ECK125202685	SutR	sutR	SutR				inverted-repeat	HTH_3	Local Regulator		[AIFS|W|Automated inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [IEP|W|Inferred from expression pattern]	Strong	10734204, 15556475, 24391520, 25406449
+ECK120013255	TdcA	tdcA	TdcA				inverted-repeat	LysR	Local Regulator	Sensing external and internal signals	[IE|W|Inferred from experiment]	Weak	2660107, 3003533, 7928991, 8413189, 8413267
+ECK120013259	TdcR	tdcR	TdcR				inverted-repeat	TdcR	Local Regulator	Sensing external and internal signals	[IE|W|Inferred from experiment]	Weak	2573820, 2660107, 7928991
+ECK120012482	TorR	torR	TorR | TorR-P	TorR-TorI	Phosphate	TorI		OmpR	Local Regulator	External-Two-component systems			
+ECK120011406	TreR	treR	TreR	TreR-&alpha;,&alpha;-trehalose 6-phosphate | TreR-Trehalose		D-trehalose 6-phosphate | Trehalose	inverted-repeat	GalR/LacI	Local Regulator	Sensing external and internal signals			
+ECK120012176	TrpR	trpR	TrpR-tryptophan	TrpR	L-tryptophan			TrpR	Local Regulator	Sensing external and internal signals			1740124, 1935980, 2182120, 2207078, 3290685, 3600756, 7001368, 7012834, 8176748
+ECK120011194	TyrR	tyrR	TyrR-tyrosine | TyrR | TyrR-phenylalanine | TyrR-L-tryptophan		L-tyrosine | L-phenylalanine | L-tryptophan		inverted-repeat	EBP	Local Regulator	Sensing external and internal signals	[IMP|W|Inferred from mutant phenotype], [APPHINH|S|Assay of protein purified to homogeneity from its native host]	Strong	15049824, 1943694, 3001057, 4887504, 8106498, 8444880, 8449883
+ECK125286592	UhpA	uhpA	UhpA-P	UhpA	Phosphate		inverted-repeat	LuxR/UhpA	Local Regulator	External-Two-component systems	[GEA|W|Gene expression analysis], [IMP|W|Inferred from mutant phenotype], [APPH|S|Assay of protein purified  to homogeneity], [AIFS|W|Automated inference of function from sequence]	Strong	10512697, 10966457, 11976297, 1482126, 1569007, 1569008, 2157156, 3301805, 7596290, 7686882, 7699720, 8098993, 8999880, 9220010
+ECK120012153	UidR	uidR	UidR				inverted-repeat	TetR/AcrR	Local Regulator	External sensing using transported metabolites	[GEA|W|Gene expression analysis], [IEP|W|Inferred from expression pattern]	Weak	2823062, 3079718, 3934044, 6276362, 776933, 776934
+ECK120012165	UlaR	ulaR	UlaR	UlaR-L-ascorbate 6-phosphate		L-ascorbate 6-phosphate	inverted-repeat	DeoR	Local Regulator		[IEP|W|Inferred from expression pattern]	Weak	12374842
+ECK125228870	UvrY	uvrY	UvrY-Phosphorylated	UvrY	Phosphate			LuxR/UhpA	Local Regulator	External-Two-component systems	[GEA|W|Gene expression analysis], [IFC|S|Inferred by functional complementation], [AIFS|W|Automated inference of function from sequence], [IEP|W|Inferred from expression pattern]	Strong	11022030, 12193630, 12533459
+ECK120012145	UxuR	uxuR	UxuR	UxuR-D-fructuronate | UxuR-&alpha;-D-glucuronate-&alpha;-D-galacturonate		D-fructuronate | &alpha;-D-galacturonate | &alpha;-D-glucuronate	inverted-repeat	GntR	Local Regulator		[IEP|W|Inferred from expression pattern]	Weak	2823062, 3083215
+ECK120013780	XapR	xapR	XapR-xanthosine	XapR	xanthosine			LysR	Local Regulator	External sensing using transported metabolites			
+ECK120013786	XylR	xylR	XylR-xylose	XylR	&alpha;-D-xylopyranose			AraC/XylS	Local Regulator	External sensing using transported metabolites			
+ECK125257198	XynR	xynR	XynR-D-xylonate	XynR	D-xylonate				Local Regulator		[ICWHO|W|Inferred computationally without human oversight], [HIFS|W|Human inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [IEP|W|Inferred from expression pattern]	Strong	15556475, 29087459
+ECK125286589	YcjW	ycjW	YcjW				inverted-repeat	GalR/LacI	Local Regulator		[IDA|S|Inferred from direct assay], [IMP|W|Inferred from mutant phenotype], [HIFS|W|Human inference of function from sequence]	Strong	10734204, 15556475, 24391520, 31253770
+ECK125300414	YdcI	ydcI	YdcI				inverted-repeat		Local Regulator		[IPI|W|Inferred from physical interaction], [HIFS|W|Human inference of function from sequence], [APPHHH|S|Assay of protein purified to homogeneity from a heterologous host]	Strong	10734204, 15556475, 24962596, 30137486
+ECK120012313	YdeO	ydeO	YdeO				inverted-repeat	AraC/XylS	Local Regulator		[GEA|W|Gene expression analysis], [IMP|W|Inferred from mutant phenotype], [APPH|S|Assay of protein purified  to homogeneity], [IEP|W|Inferred from expression pattern], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [HIFS|W|Human inference of function from sequence]	Strong	12399493, 12694615, 15489450, 20603130, 25375160, 9409145
+ECK125158221	YdfH	ydfH	YdfH				inverted-repeat	GntR	Local Regulator		[HIFS|W|Human inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [IEP|W|Inferred from expression pattern]	Strong	10734204, 15556475, 22972332
+ECK125228840	YebK	yebK	YebK	YebK-2-dehydro-3-deoxy-D-gluconate 6-phosphate		2-dehydro-3-deoxy-D-gluconate 6-phosphate	inverted-repeat	RpiR	Local Regulator		[AIFSO|W|Automated inference of function by sequence orthology], [AIFS|W|Automated inference of function from sequence], [HIFS|W|Human inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host]	Strong	10734204, 15556475, 21849503, 26121029
+ECK125135147	YefM	yefM	YefM				inverted-repeat	YefM, YoeB/Txe_like	Local Regulator				
+ECK125257203	YefM-YoeB	yefM, yoeB	YefM-YoeB				inverted-repeat		Local Regulator		[APPH|S|Assay of protein purified  to homogeneity]	Strong	17170003
+ECK120013665	YeiL	yeiL	YeiL				inverted-repeat	Cyclic nucleotide_binding domain	Local Regulator		[GEA|W|Gene expression analysis], [HIFS|W|Human inference of function from sequence]	Weak	11101674, 9278503
+ECK120051444	YgiV	ygiV	YgiV				inverted-repeat		Local Regulator		[IEP|W|Inferred from expression pattern], [AUP|W|Assay of unpurified protein ]	Weak	18309357
+ECK125257182	YhaJ	yhaJ	YhaJ				inverted-repeat		Local Regulator		[HIFS|W|Human inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [IEP|W|Inferred from expression pattern]	Strong	10734204, 15556475, 27713734
+ECK120014044	YiaJ	plaR	YiaJ				inverted-repeat	IclR	Local Regulator		[GEA|W|Gene expression analysis], [IMP|W|Inferred from mutant phenotype], [IPI|W|Inferred from physical interaction], [APPH|S|Assay of protein purified  to homogeneity]	Strong	10913096, 30137486, 9525947
+ECK125228843	YjjQ	yjjQ	YjjQ				inverted-repeat	LuxR/UhpA	Local Regulator		[IDA|S|Inferred from direct assay], [IMP|W|Inferred from mutant phenotype], [AIFS|W|Automated inference of function from sequence], [IEP|W|Inferred from expression pattern]	Strong	15556475, 17846588, 26078445
+ECK125110189	YqhC	yqhC	YqhC				inverted-repeat	AraC/XylS	Local Regulator		[HIFS|W|Human inference of function from sequence], [APPHINH|S|Assay of protein purified to homogeneity from its native host], [IEP|W|Inferred from expression pattern]	Strong	10734204, 15556475, 20543070
+ECK125257191	ZntR	zntR	ZntR-Zn | ZntR-Hg	ZntR	Cd<sup>2+</sup> | Zn<SUP>2+</SUP> | Hg		inverted-repeat		Local Regulator	External sensing using transported metabolites	[GEA|W|Gene expression analysis], [BPP|S|Binding of purified proteins], [HIFS|W|Human inference of function from sequence]	Strong	10048032, 10608803
+ECK120014103	ZraR	zraR	ZraR-Phosphorylated	ZraR	Phosphate			EBP	Local Regulator	External-Two-component systems	[GEA|W|Gene expression analysis], [IFC|S|Inferred by functional complementation], [HIFS|W|Human inference of function from sequence]	Strong	11243806, 1482126, 2157156, 7699720, 8098993
+ECK120012020	Zur	zur	Zur-Zn	Zur	Zn<SUP>2+</SUP>			Fur	Local Regulator				11523983, 11831459, 11931550, 12904577
